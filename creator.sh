@@ -33,7 +33,7 @@ for (( i=1; i<=$2; i++ ))
 	done
 	echo -e "\t\t\t echo \"$lum. Quit\"" >> $1/main.sh
 cat <<<'
-		read -p "take your choice: " choice
+		read -p "Take your choice: " choice
 		case $choice in
  ' >> $1/main.sh
 	jum=1
@@ -44,7 +44,7 @@ cat <<<'
 	done
 	echo -e "\t\t\t$jum) break ;;" >> $1/main.sh
 	echo -ne "\t\t\t*) " >> $1/main.sh
-	echo -ne 'echo "nums from ' >> $1/main.sh
+	echo -ne 'echo "Nums from ' >> $1/main.sh
 	echo -ne "1 to $(( $2 +1 )) ONLY\" ;" >> $1/main.sh
 	echo  " sleep 3 ;;" >> $1/main.sh
 	echo -e "\t\tesac" >> $1/main.sh
