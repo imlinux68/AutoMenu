@@ -45,7 +45,7 @@ cat <<<'
 	echo -e "\t\t\t$jum) break ;;" >> $1/main.sh
 	echo -ne "\t\t\t*) " >> $1/main.sh
 	echo -ne 'echo "nums from ' >> $1/main.sh
-	echo -ne "1 to $num ONLY\" ;" >> $1/main.sh
+	echo -ne "1 to $(( $2 +1 )) ONLY\" ;" >> $1/main.sh
 	echo  " sleep 3 ;;" >> $1/main.sh
 	echo -e "\t\tesac" >> $1/main.sh
 	echo -e "\tdone" >> $1/main.sh
